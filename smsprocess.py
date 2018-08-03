@@ -6,10 +6,10 @@ import cookielib
 from getpass import getpass
 import sys
  
-username = "9566184248"
-passwd = "Q2938P"
+username = "username"
+passwd = "password"
 message = "Hello this is TEST message from Syed's Pi"
-number = ["9566184248"]
+number = ["any mobile number"]
 message = "+".join(message.split(' '))
 print "entered to send sms" 
 #Logging into the SMS Site
