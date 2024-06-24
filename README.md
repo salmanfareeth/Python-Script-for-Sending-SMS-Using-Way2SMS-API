@@ -33,7 +33,7 @@ To run the script, use the following command:
 
 bash:
 
-    python sms_script.py
+    python smsprocess.py
 
 Make sure to replace sms_script.py with the actual name of your script file if it is different.
 
