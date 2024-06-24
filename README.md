@@ -37,7 +37,7 @@ bash:
 
 Make sure to replace sms_script.py with the actual name of your script file if it is different.
 
-Script Explanation
+
 The script performs the following steps:
 
 Prepare the Message
