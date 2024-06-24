@@ -89,7 +89,7 @@ Error While Sending Message
 
 Educational Purpose Only:
 
-This project is created by me and is intended solely for educational purposes. Use it responsibly and modify it according to your needs.
+This project is created by salmanfareeth and is intended solely for educational purposes. Use it responsibly and modify it according to your needs.
 
 
 Privacy and Security:
