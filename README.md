@@ -1,4 +1,4 @@
-## Python Script for Sending SMS Using Way2SMS API
+# Python Script for Sending SMS Using Way2SMS API
 
 This repository contains a simple Python script to send SMS messages using the urllib2 and cookielib libraries. The script logs into the SMS service and sends a message to specified mobile numbers.
 
@@ -6,7 +6,7 @@ This repository contains a simple Python script to send SMS messages using the u
 
 Before running the script, make sure you have Python installed on your system. This script is compatible with Python 2.x.
 
-# How to Run
+## How to Run
 
 1. **Clone the Repository:**
 
@@ -28,23 +28,20 @@ Since the script uses urllib2 and cookielib, ensure you have these libraries ava
 
 Open the script and update the username, passwd, message, and number variables with your own details.
 
-python:
-
+ ```sh
     username = "your_username"
     passwd = "your_password"
     message = "Your message here"
     number = ["recipient_mobile_number"]
+ ```
 
 # Running the Script
 
 To run the script, use the following command:
 
  ```sh
-    python smsprocess.py
+ python smsprocess.py
  ```
-
-Make sure to replace sms_script.py with the actual name of your script file if it is different.
-
 
 ## The script performs the following steps:
 
