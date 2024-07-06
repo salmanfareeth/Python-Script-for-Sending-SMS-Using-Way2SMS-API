@@ -39,9 +39,9 @@ python:
 
 To run the script, use the following command:
 
-    ```sh
+ ```sh
     python smsprocess.py
-    ```
+ ```
 
 Make sure to replace sms_script.py with the actual name of your script file if it is different.
 
@@ -54,6 +54,7 @@ The message to be sent is prepared by replacing spaces with + to conform to URL 
 python:
 
     message = "+".join(message.split(' '))
+
 
 2. **Log into the SMS Service**
 
