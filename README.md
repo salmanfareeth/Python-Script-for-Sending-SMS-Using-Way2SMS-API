@@ -40,50 +40,50 @@ Open the script and update the username, passwd, message, and number variables w
 To run the script, use the following command:
 
  ```sh
- python smsprocess.py
+     python smsprocess.py
  ```
 
 ## The script performs the following steps:
 
 1. **Prepare the Message**
+
 The message to be sent is prepared by replacing spaces with + to conform to URL encoding.
 
-python:
-
+```sh
     message = "+".join(message.split(' '))
-
+```
 
 2. **Log into the SMS Service**
 
 The script logs into the SMS service using the provided username and password.
 
-python:
-
+```sh
     url = 'http://site24.way2sms.com/Login1.action?'
     data = 'username=' + username + '&password=' + passwd + '&Submit=Sign+in'
+```
 
 3. **Handle Cookies**
 
 A cookie jar is used to manage cookies during the session.
 
-python:
-
+```sh
     cj = cookielib.CookieJar()
     opener = urllib2.build_opener(urllib2.HTTPCookieProcessor(cj))
     opener.addheaders = [('User-Agent','Mozilla/5.0 ...')]
+```
 
 4. **Send the SMS**
 
 For each number in the list, the script sends the SMS by making a request to the appropriate URL with the required data.
 
-python:
-
+```sh
     for i in number:
     jession_id = str(cj).split('~')[1].split(' ')[0]
     send_sms_url = 'http://site24.way2sms.com/smstoss.action?'
     send_sms_data = 'ssaction=ss&Token=' + jession_id + '&mobile=' + i + '&message=' + message + '&msgLen=136'
     opener.addheaders = [('Referer', 'http://site25.way2sms.com/sendSMS?Token=' + jession_id)]
     sms_sent_page = opener.open(send_sms_url, send_sms_data)
+```
     
 ## Troubleshooting:
 
