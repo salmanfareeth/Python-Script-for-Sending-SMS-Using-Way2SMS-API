@@ -22,11 +22,11 @@ Before running the script, make sure you have Python installed on your system. T
 
 # Install Required Libraries
 
-Since the script uses urllib2 and cookielib, ensure you have these libraries available. These are included in the standard library for Python 2.x.
+Since the script uses `urllib2` and `cookielib`, ensure you have these libraries available. These are included in the standard library for `Python 2.x`
 
 # Update Credentials
 
-Open the script and update the username, passwd, message, and number variables with your own details.
+Open the script and update the `username`, `passwd`, `message`, and `number variables` with your own details.
 
  ```sh
     username = "your_username"
@@ -55,7 +55,7 @@ The message to be sent is prepared by replacing spaces with + to conform to URL 
 
 2. **Log into the SMS Service**
 
-The script logs into the SMS service using the provided username and password.
+The script logs into the SMS service using the provided `username` and `password`.
 
 ```sh
     url = 'http://site24.way2sms.com/Login1.action?'
@@ -96,7 +96,7 @@ For each number in the list, the script sends the SMS by making a request to the
 
 ## Educational Purpose Only:
 
-This project is created by salmanfareeth and is intended solely for educational purposes. Use it responsibly and modify it according to your needs.
+This project is created by `salmanfareeth` and is intended solely for educational purposes. Use it responsibly and modify it according to your needs.
 
 
 ## Privacy and Security:
